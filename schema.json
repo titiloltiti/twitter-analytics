@@ -1,0 +1,310 @@
+{
+    "schema": {
+        "type": "struct",
+        "optional": "false",
+        "fields": [
+            {
+                "type": "struct",
+                "field": "data",
+                "optional": true,
+                "fields": [
+                    {
+                        "type": "struct",
+                        "optional": true,
+                        "field": "entities",
+                        "fields": [
+                            {
+                                "type": "array",
+                                "optional": true,
+                                "field": "urls",
+                                "items": {
+                                    "type": "struct",
+                                    "optional": true,
+                                    "fields": [
+                                        {
+                                            "type": "string",
+                                            "optional": true,
+                                            "field": "start"
+                                        },
+                                        {
+                                            "type": "string",
+                                            "optional": true,
+                                            "field": "end"
+                                        },
+                                        {
+                                            "type": "string",
+                                            "optional": true,
+                                            "field": "url"
+                                        },
+                                        {
+                                            "type": "string",
+                                            "optional": true,
+                                            "field": "expanded_url"
+                                        },
+                                        {
+                                            "type": "string",
+                                            "optional": true,
+                                            "field": "display_url"
+                                        },
+                                        {
+                                            "type": "array",
+                                            "optional": true,
+                                            "field": "images",
+                                            "items": {
+                                                "type": "struct",
+                                                "optional": true,
+                                                "fields": [
+                                                    {
+                                                        "type": "string",
+                                                        "optional": true,
+                                                        "field": "url"
+                                                    },
+                                                    {
+                                                        "type": "int32",
+                                                        "optional": true,
+                                                        "field": "width"
+                                                    },
+                                                    {
+                                                        "type": "int32",
+                                                        "optional": true,
+                                                        "field": "height"
+                                                    }
+                                                ]
+                                            }
+                                        },
+                                        {
+                                            "type": "int32",
+                                            "optional": true,
+                                            "field": "status"
+                                        },
+                                        {
+                                            "type": "string",
+                                            "optional": true,
+                                            "field": "title"
+                                        },
+                                        {
+                                            "type": "string",
+                                            "optional": true,
+                                            "field": "description"
+                                        },
+                                        {
+                                            "type": "string",
+                                            "optional": true,
+                                            "field": "unwound_url"
+                                        }
+                                    ]
+                                }
+                            },
+                            {
+                                "type": "array",
+                                "optional": true,
+                                "field": "mentions",
+                                "items": {
+                                    "type": "struct",
+                                    "optional": true,
+                                    "fields": [
+                                        {
+                                            "type": "int32",
+                                            "optional": true,
+                                            "field": "start"
+                                        },
+                                        {
+                                            "type": "int32",
+                                            "optional": true,
+                                            "field": "end"
+                                        },
+                                        {
+                                            "type": "string",
+                                            "optional": true,
+                                            "field": "username"
+                                        }
+                                    ]
+                                }
+                            },
+                            {
+                                "type": "array",
+                                "optional": true,
+                                "field": "hashtags",
+                                "items": {
+                                    "type": "struct",
+                                    "optional": true,
+                                    "fields": [
+                                        {
+                                            "type": "int32",
+                                            "optional": true,
+                                            "field": "start"
+                                        },
+                                        {
+                                            "type": "int32",
+                                            "optional": true,
+                                            "field": "end"
+                                        },
+                                        {
+                                            "type": "string",
+                                            "optional": true,
+                                            "field": "tag"
+                                        }
+                                    ]
+                                }
+                            },
+                            {
+                                "type": "array",
+                                "optional": true,
+                                "field": "annotations",
+                                "items": {
+                                    "type": "struct",
+                                    "optional": true,
+                                    "fields": [
+                                        {
+                                            "type": "int32",
+                                            "optional": true,
+                                            "field": "start"
+                                        },
+                                        {
+                                            "type": "int32",
+                                            "optional": true,
+                                            "field": "end"
+                                        },
+                                        {
+                                            "type": "string",
+                                            "optional": true,
+                                            "field": "probability"
+                                        },
+                                        {
+                                            "type": "string",
+                                            "optional": true,
+                                            "field": "type"
+                                        },
+                                        {
+                                            "type": "string",
+                                            "optional": true,
+                                            "field": "normalized_text"
+                                        }
+                                    ]
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "type": "string",
+                        "optional": true,
+                        "field": "author_id"
+                    },
+                    {
+                        "type": "string",
+                        "optional": true,
+                        "field": "lang"
+                    },
+                    {
+                        "type": "string",
+                        "optional": true,
+                        "field": "id"
+                    },
+                    {
+                        "type": "string",
+                        "optional": true,
+                        "field": "created_at"
+                    },
+                    {
+                        "type": "string",
+                        "optional": true,
+                        "field": "text"
+                    },
+                    {
+                        "type": "struct",
+                        "field": "public_metrics",
+                        "optional": true,
+                        "fields": [
+                            {
+                                "type": "int32",
+                                "optional": true,
+                                "field": "retweet_count"
+                            },
+                            {
+                                "type": "int32",
+                                "optional": true,
+                                "field": "reply_count"
+                            },
+                            {
+                                "type": "int32",
+                                "optional": true,
+                                "field": "like_count"
+                            },
+                            {
+                                "type": "int32",
+                                "optional": true,
+                                "field": "quote_count"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "type": "struct",
+                "optional": true,
+                "field": "includes",
+                "fields": [
+                    {
+                        "type": "array",
+                        "optional": true,
+                        "field": "users",
+                        "items": {
+                            "type": "struct",
+                            "optional": true,
+                            "fields": [
+                                {
+                                    "type": "string",
+                                    "optional": true,
+                                    "field": "id"
+                                },
+                                {
+                                    "type": "boolean",
+                                    "optional": true,
+                                    "field": "verified"
+                                },
+                                {
+                                    "type": "string",
+                                    "optional": true,
+                                    "field": "username"
+                                },
+                                {
+                                    "type": "string",
+                                    "optional": true,
+                                    "field": "name"
+                                },
+                                {
+                                    "type": "struct",
+                                    "field": "public_metrics",
+                                    "optional": true,
+                                    "fields": [
+                                        {
+                                            "type": "int32",
+                                            "optional": true,
+                                            "field": "followers_count"
+                                        },
+                                        {
+                                            "type": "int32",
+                                            "optional": true,
+                                            "field": "following_count"
+                                        },
+                                        {
+                                            "type": "int32",
+                                            "optional": true,
+                                            "field": "tweet_count"
+                                        },
+                                        {
+                                            "type": "int32",
+                                            "optional": true,
+                                            "field": "listed_count"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    }
+                ]
+            }
+        ]
+    }, 
+    "payload": { ... }
+}
